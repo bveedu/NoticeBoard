@@ -8,7 +8,7 @@ import java.util.Optional;
 public interface CrudService<T extends BaseDTO> {
 
     List<T> findAll();
-
+    List<T> findByCreationDate(Date creationDate);
     Optional<T> findById(Long id);
 
     T save(T dto);
